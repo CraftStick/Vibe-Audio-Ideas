@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibe Audio Ideas</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>Vibe Audio Ideas</h1>
+        <p>
+          Быстрый прототип: записывай голосовые идеи, получай текст и сохраняй
+          заметки локально.
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>Новая аудио-заметка</h2>
+        <div class="actions">
+          <button id="recordBtn" type="button">Начать запись</button>
+          <button id="stopBtn" type="button" disabled>Остановить</button>
+          <button id="clearBtn" type="button">Очистить всё</button>
+        </div>
+        <p id="status" class="status">Готов к записи.</p>
+        <label class="label" for="titleInput">Название</label>
+        <input
+          id="titleInput"
+          type="text"
+          placeholder="Например: Идея для демо на встрече"
+        />
+        <label class="label" for="transcript">Текст (автозаполнение во время речи)</label>
+        <textarea
+          id="transcript"
+          rows="5"
+          placeholder="Здесь появится расшифровка речи. Можно отредактировать вручную."
+        ></textarea>
+        <button id="saveBtn" type="button" disabled>Сохранить заметку</button>
+      </section>
+
+      <section class="card">
+        <h2>Сохраненные заметки</h2>
+        <div id="notesList" class="notes-list">
+          <p class="empty">Пока нет заметок.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
