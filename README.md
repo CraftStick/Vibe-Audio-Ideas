@@ -22,3 +22,13 @@ python3 -m http.server 8000
 ```
 
 После этого открой [http://localhost:8000](http://localhost:8000).
+
+---
+
+<div align="center">
+
+**If you found this useful, consider leaving a ⭐ — it helps a lot!**
+
+**Если было полезно — поставь ⭐, это очень помогает!**
+
+</div>
