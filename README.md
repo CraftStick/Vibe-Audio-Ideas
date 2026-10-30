@@ -1,34 +1,27 @@
 # Vibe Audio Ideas
 
-Прототип в стиле Vibe Coding: приложение для быстрых голосовых заметок.
+[English](README.md) · [Русский](README.ru.md)
 
-## Что умеет
+A vibe-coding prototype: an app for quick voice notes.
 
-- записывать аудио с микрофона;
-- автоматически получать черновую расшифровку речи (если поддерживается браузером);
-- сохранять заметки локально в браузере;
-- воспроизводить и удалять сохраненные заметки.
+## Features
 
-## Запуск
+- Records audio from the microphone
+- Produces a draft transcript automatically (where the browser supports it)
+- Saves notes locally in the browser
+- Plays back and deletes saved notes
 
-1. Открой `index.html` в браузере.
-2. Разреши доступ к микрофону.
-3. Нажми "Начать запись", затем "Остановить" и "Сохранить заметку".
+## Getting Started
 
-Для более стабильной работы API микрофона лучше запускать через локальный сервер:
+Open `index.html` in a browser. For more reliable microphone access, serve the folder with a local server instead:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-После этого открой [http://localhost:8000](http://localhost:8000).
+Then open <http://localhost:8000>.
 
----
+## Usage
 
-<div align="center">
-
-**If you found this useful, consider leaving a ⭐ — it helps a lot!**
-
-**Если было полезно — поставь ⭐, это очень помогает!**
-
-</div>
+1. Allow microphone access.
+2. Click **Начать запись** (start recording), then stop it and click **Сохранить заметку** (save note).
